@@ -9,7 +9,7 @@ pipeline{
      stages {
       stage('build') {
           steps{
-            sh 'docker build -t nireimage/dp-alpine:latest .'
+            sh 'docker build -t nireniru132/dp-alpine:latest .'
           }
       }
       stage('Login') {
@@ -19,7 +19,7 @@ pipeline{
       }
       stage('push') {
           steps {
-            sh 'docker push nireimage/dp-alpine:latest'
+            sh 'docker push nireniru132/dp-alpine:latest'
           }
       }
     }
